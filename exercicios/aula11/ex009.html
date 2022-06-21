@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Voce é Brasileiro ou estrangeiro? </h1>
+    <input type="text" name="txttx" id="tx"  >
+   <input type="button" value="Somar" onclick="somar()">
+    <div id="res"></div>
+
+    <script>
+        
+        function Missing() {
+            var país = 'Brasil'
+        var tx1 = window.document.getElementById('tx')
+        var res = window.document.getElementById('res')
+        var n1 = Number(txttx.value)
+        
+        if (país != 'Brail') { 
+     res.innerHTML += ('Voce é estrangeiro!') } 
+
+        else {
+    res.innerText += ('voce é brasileiro')
+}
+} 
+    
+
+    </script>
+</body>
+</html>
