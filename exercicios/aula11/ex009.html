@@ -8,25 +8,27 @@
 </head>
 <body>
     <h1>Voce é Brasileiro ou estrangeiro? </h1>
-    <input type="text" name="txttx" id="tx"  >
+    <input type="text" name="Brasil" id="tx"  >
    <input type="button" value="Somar" onclick="somar()">
     <div id="res"></div>
 
     <script>
         
-        function Missing() {
-            var país = 'Brasil'
+        function somar() {
+        var br = 'Brasil' 
         var tx1 = window.document.getElementById('tx')
         var res = window.document.getElementById('res')
-        var n1 = Number(txttx.value)
+        var n1 = String(tx1.value)
         
-        if (país != 'Brail') { 
-     res.innerHTML += ('Voce é estrangeiro!') } 
+        if ( n1 != 'Brasil') { 
+     res.innerText += ('Voce é estrangeiro!') 
+    }
+    
 
-        else {
+        else  {
     res.innerText += ('voce é brasileiro')
-}
-} 
+    }   
+    } 
     
 
     </script>
