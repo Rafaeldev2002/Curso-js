@@ -3,6 +3,7 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
+    var fotos = document.querySelector('div.imagens')
     if (fano.value.length == 0 || Number(fano.value) > ano ) {
             window.alert('[ERRO] Verifique os dados e tente novamente ')
     }
@@ -15,8 +16,9 @@ function verificar() {
     }
     if (fsex[0].checked) {
         gênero = 'homem'
-
-
+         fotos.setAttribute('src' , 'img/homem.jpg')
+         fotos.appendChild('imagens')
+    
     }
     else if (fsex[1].checked) {
         gênero = 'Mulher'
